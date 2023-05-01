@@ -179,7 +179,7 @@ uint16_t BotFCTUC::getFlameValue() {
 
 /**
   @brief Get values from the color sensor.
-  @return red, green, blue and clear channel values between [0, 1023]
+  @return red, green, blue and clear channel values between [0, 255]
  */
 ColorRGBC BotFCTUC::getColorValue() {
     ColorRGBC result;
@@ -187,10 +187,10 @@ ColorRGBC BotFCTUC::getColorValue() {
     
     deviceColorSensor.getRawData(&red, &green, &blue, &clear);
 
-    result.r = red / 256;
-    result.g = green / 256;
-    result.b = blue / 256;
-    result.c = clear / 256;
+    result.r = red;
+    result.g = green;
+    result.b = blue;
+    result.c = clear;
 
     return result;
 }
