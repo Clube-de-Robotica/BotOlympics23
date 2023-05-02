@@ -58,9 +58,7 @@ Considerando o 0 < PWM < 1, adptando para o valor usado pelo arduino (0 < PWM < 
 
 Tratando-se de um robô com condução diferencial, é possível fazer o robô mudar de direção ao aumentar (ou diminuir) a velocidade de uma roda em relação à outra. Ao rodar as rodas com velocidades iguais mas sentidos opostos é possível fazer o robô rodar sobre si próprio.  
 Na imagem é possível ver os exemplos mencionados.  
-![Exemplo Condução diferencial](https://github.com/JNDVasco/BotOlympics22/blob/main/Prova%20FCTUC/assets/condDiferencial_Fundo.png "Condução Diferencial")
-
-
+![Exemplo Condução diferencial](assets/condDiferencial_Fundo.png "Condução Diferencial")
 
 ## Sensores
 
@@ -68,13 +66,12 @@ Na imagem é possível ver os exemplos mencionados.
 
 Para detetar a vela o robô dispõe de um sensor de infravermelhos. 
 O sensor é capaz de detetar uma chama diretamente à sua frente, devolendo um sinal analógico que pode ser obtido através de um ADC do arduino.  
-Para testar o sensor e obter os valores *treshold* existe um código de exemplo [aqui](exemplos/sensorChama.cpp "Exemplo Sensor de Chama").  
-
+Para testar o sensor e obter os valores *threshold* existe um código de exemplo [aqui](exemplos/TesteChamaBuzzer.cpp "Exemplo Sensor de Chama").  
 
 ### Sensor de Cor
 
 Para detetar a entrada num quarto, que se encontra delemitado por uma linha branca existe um sensor de cor na parte inferior do robô.  
-O modelo deste sensor é TCS34725, este devolve os valores para a cor Vermelha, Verde, Azul e o Clear. Código de exemplo disponível [aqui](exemplos/sensorCor.cpp "Exemplo Sensor de Cor").
+O modelo deste sensor é TCS34725, este devolve os valores para a cor Vermelha, Verde, Azul e o Clear. Código de exemplo disponível [aqui](exemplos/TesteCorPixel.cpp "Exemplo Sensor de Cor").
 
 ### Sensor de Distância
 
