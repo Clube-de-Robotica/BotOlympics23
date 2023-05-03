@@ -34,6 +34,8 @@ public:
     uint16_t getLidarRightDistance();
     uint16_t getLidarFrontDistance();
     uint16_t getLidarLeftDistance();
-} Lidar;
+};
+
+extern LiDAR Lidar;
 
 #endif

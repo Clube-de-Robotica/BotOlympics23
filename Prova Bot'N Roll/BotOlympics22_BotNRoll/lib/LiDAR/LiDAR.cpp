@@ -2,11 +2,11 @@
 
 LiDAR::LiDAR() {
 
-};
+}
 
 LiDAR::~LiDAR() {
 
-};
+}
 
 void LiDAR::begin() {
     Wire.begin();
@@ -99,3 +99,5 @@ uint16_t LiDAR::getLidarLeftDistance() {
     uint16_t result = deviceLidarLeft.readRangeContinuousMillimeters();
     return constrain(result, DIST_LIDAR_MIN, DIST_LIDAR_MAX);
 }
+
+LiDAR Lidar = LiDAR();
